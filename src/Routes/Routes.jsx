@@ -5,7 +5,16 @@ import { createBrowserRouter } from "react-router";
         {
             path:"/",
             element:<Root></Root>,
-            children:[]
+            children:[
+                {
+                    path:"/",
+                    element:<Home></Home>,
+                },
+                {
+                    path:"/userProfile",
+                    element:<Profile></Profile>,
+                }
+            ]
         }
     ]
  )
