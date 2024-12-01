@@ -11,10 +11,10 @@ const Navigation = () => {
             <div className="">
                 <ul className="gap-5 menu-content">
                     <li> 
-                        <Link>Home</Link>
+                        <Link to={'/'}>Root</Link>
                     </li>
                     <li>
-                        <Link>Menu </Link>
+                        <Link to={'/about'}>About</Link>
                     </li>
                     <li>
                         <Link>Profile</Link>
@@ -30,7 +30,7 @@ const Navigation = () => {
                     Login
                 </button>
                 </Link>
-                <Link>
+                <Link to={"/register"}>
                     <button  className="bg-white px-4 py-1 rounded-md">Register</button>
                 </Link>
                 
