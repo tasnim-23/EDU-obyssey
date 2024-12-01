@@ -1,4 +1,6 @@
 import { createBrowserRouter } from "react-router";
+import Root from "../Root/Root";
+import Home from "../Root/Home/Home";
 
  const router = createBrowserRouter(
     [
@@ -10,21 +12,12 @@ import { createBrowserRouter } from "react-router";
                     path:"/",
                     element:<Home></Home>,
                 },
-                {
-                    path:"/userProfile",
-                    element:<Profile></Profile>,
-                }
+                // // {
+                //     path:"/userProfile",
+                //     element:<Profile></Profile>,
+                // // }
             ]
         }
     ]
  )
-
-// const Routes = () => {
-//     return (
-//         <div>
-            
-//         </div>
-//     );
-// };
-
-// export default Routes;
+ export default router;
