@@ -1,10 +1,14 @@
 import { Link } from "react-router";
 import "./Navigation.css"
+import Logo from "./Logo/Logo";
 
 const Navigation = () => {
     return(
         <section className="flex justify-between items-center bg-blue-400 px-4 py-4 font-semibold">
-            <div className="w-8/12">
+            <div>
+                <Logo></Logo>
+            </div>
+            <div className="">
                 <ul className="gap-5 menu-content">
                     <li> 
                         <Link>Home</Link>
@@ -20,7 +24,7 @@ const Navigation = () => {
                     </li>
                 </ul>
             </div>
-            <div className="w-4/12 flex justify-end gap-2">
+            <div className="flex justify-end gap-2">
                 <Link>
                 <button className="bg-white px-4 py-1 rounded-md">
                     Login
